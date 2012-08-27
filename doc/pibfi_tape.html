@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Module pibfi_tape</title>
+
+</head>
+<body bgcolor="white">
+<h1>Module pibfi_tape</h1>
+<ul><li>
+<a href="#index">Function index</a></li><li>
+<a href="#exported">Exported functions</a></li></ul>
+
+<h2>Description</h2>
+Tape ADT for the Platonic Ideal Brainf*ck Interpreter.
+ 
+  <p>Now a behaviour.</p>
+ 
+
+<h2><a name="index">Function Index</a></h2>
+
+<table width="100%" border="1"><tr><th colspan="2" align="left">Exported Functions</th></tr>
+<tr><td><a href="#behaviour_info-1">behaviour_info/1</a></td><td/></tr>
+<tr><td><a href="#decrement-1">decrement/1</a></td><td>Decrements the value at the current position on the tape.</td></tr>
+<tr><td><a href="#decrement-2">decrement/2</a></td><td>Decrements the value at the current position on the tape N times.</td></tr>
+<tr><td><a href="#examine-1">examine/1</a></td><td>Examines the state of the tape.</td></tr>
+<tr><td><a href="#increment-1">increment/1</a></td><td>Increments the value at the current position on the tape.</td></tr>
+<tr><td><a href="#increment-2">increment/2</a></td><td>Increments the value at the current position on the tape N times.</td></tr>
+<tr><td><a href="#left-1">left/1</a></td><td>Moves the read/write head one position left on the tape.</td></tr>
+<tr><td><a href="#left-2">left/2</a></td><td>Moves the read/write head N positions left on the tape.</td></tr>
+<tr><td><a href="#read-1">read/1</a></td><td>Returns the value at the current position on the tape.</td></tr>
+<tr><td><a href="#right-1">right/1</a></td><td>Moves the read/write head one position right on the tape.</td></tr>
+<tr><td><a href="#right-2">right/2</a></td><td>Moves the read/write head N positions right on the tape.</td></tr>
+<tr><td><a href="#server-2">server/2</a></td><td/></tr>
+<tr><td><a href="#start-3">start/3</a></td><td>Starts and returns the pid of a new tape server.</td></tr>
+<tr><td><a href="#write-2">write/2</a></td><td>Places the given value at the current position on the tape.</td></tr>
+</table>
+
+<h2><a name="exported">Exported Functions</a></h2>
+
+<h3><a name="behaviour_info-1">behaviour_info/1</a></h3>
+
+<p><code>behaviour_info(Arg1) -> term()</code></p>
+<p> </p>
+
+<h3><a name="decrement-1">decrement/1</a></h3>
+
+<p><code>decrement(<a href="#type-tape">tape()</a>) -> ok | {error, Reason}</code></p>
+<p>Decrements the value at the current position on the tape.</p>
+
+<h3><a name="decrement-2">decrement/2</a></h3>
+
+<p><code>decrement(<a href="#type-tape">tape()</a>, N::integer()) -> ok | {error, Reason}</code></p>
+<p>Decrements the value at the current position on the tape N times.</p>
+
+<h3><a name="examine-1">examine/1</a></h3>
+
+<p><code>examine(TapePid::pid()) -> ok | {error, Reason}</code></p>
+<p>Examines the state of the tape.</p>
+
+<h3><a name="increment-1">increment/1</a></h3>
+
+<p><code>increment(<a href="#type-tape">tape()</a>) -> ok | {error, Reason}</code></p>
+<p>Increments the value at the current position on the tape.</p>
+
+<h3><a name="increment-2">increment/2</a></h3>
+
+<p><code>increment(<a href="#type-tape">tape()</a>, N::integer()) -> ok | {error, Reason}</code></p>
+<p>Increments the value at the current position on the tape N times.</p>
+
+<h3><a name="left-1">left/1</a></h3>
+
+<p><code>left(pid()) -> ok</code></p>
+<p>Moves the read/write head one position left on the tape.</p>
+
+<h3><a name="left-2">left/2</a></h3>
+
+<p><code>left(pid(), N::integer()) -> ok</code></p>
+<p>Moves the read/write head N positions left on the tape.</p>
+
+<h3><a name="read-1">read/1</a></h3>
+
+<p><code>read(pid()) -> integer()</code></p>
+<p>Returns the value at the current position on the tape.</p>
+
+<h3><a name="right-1">right/1</a></h3>
+
+<p><code>right(pid()) -> ok</code></p>
+<p>Moves the read/write head one position right on the tape.</p>
+
+<h3><a name="right-2">right/2</a></h3>
+
+<p><code>right(pid(), N::integer()) -> ok</code></p>
+<p>Moves the read/write head N positions right on the tape.</p>
+
+<h3><a name="server-2">server/2</a></h3>
+
+<p><code>server(Arg1, Arg2) -> term()</code></p>
+<p> </p>
+
+<h3><a name="start-3">start/3</a></h3>
+
+<p><code>start(<a href="#type-module">module()</a>, Supervisor::pid(), [<a href="#type-option">option()</a>]) -> pid()<ul><li><a name="type-option">option()</a> = {atom(), term()}</li></ul></code></p>
+<p>Starts and returns the pid of a new tape server.
+  For a description of the allowed options, see the documentation for
+  the <code><a href="pibfi.html">pibfi</a></code> module.</p>
+
+<h3><a name="write-2">write/2</a></h3>
+
+<p><code>write(<a href="#type-tape">tape()</a>, integer()) -> {ok, integer()} | {error, Reason}</code></p>
+<p>Places the given value at the current position on the tape.</p></body>
+</html>

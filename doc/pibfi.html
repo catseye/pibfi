@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Module pibfi</title>
+
+</head>
+<body bgcolor="white">
+<h1>Module pibfi</h1>
+<ul><li>
+<a href="#index">Function index</a></li><li>
+<a href="#exported">Exported functions</a></li></ul>
+
+<h2>Description</h2>
+Platonic Ideal Brainf*ck Interpreter (<code>pibfi</code>).
+ 
+  <p>This application implements an interpreter for the language
+  Brainf*ck.  It does not by default impose any limit on the maximum
+  length of the tape, nor the maximum value that can entered into
+  any of the cells in the tape (beyond those limits inescapably
+  imposed upon it by the underlying operating system and hardware.)
+  It can, however, be configured to simulate the limits imposed upon
+  the language by many other implementations which sacrifice
+  scaleability in order to achieve other goals (usually, to build an
+  astonishingly small compiler or interpreter.)</p>
+ 
+  <p>As such, <code>pibfi</code> may be in a position to one day
+  develop into a universal (or at least reference) interpreter for
+  the Brainf*ck language.</p>
+ 
+  <p>For a synopsis of the command-line options that can be used
+  with <code>pibfi</code>, see the
+  <code><a href="pibfi_options.html">pibfi_options</a></code>
+  documentation.</p>
+ 
+  <p>This module contains the interface to start <code>pibfi</code>
+  both from the command line, and programmatically.  It also contains
+  common functions used by other <code>pibfi_*</code> modules.</p>
+ 
+  <p>Parts of this program were derived from the Erlang example
+  program <code>bf.erl</code>.</p>
+ 
+
+<h2><a name="index">Function Index</a></h2>
+
+<table width="100%" border="1"><tr><th colspan="2" align="left">Exported Functions</th></tr>
+<tr><td><a href="#assert-2">assert/2</a></td><td>Asserts that the condition is true.</td></tr>
+<tr><td><a href="#assert_in_bounds-4">assert_in_bounds/4</a></td><td/></tr>
+<tr><td><a href="#os_eol-0">os_eol/0</a></td><td>Returns the native end-of-line convention, if it can be determined.</td></tr>
+<tr><td><a href="#run-1">run/1</a></td><td>Starts <code>pibfi</code> for the purposes of running a Brainf*ck
+  program.</td></tr>
+<tr><td><a href="#run-6">run/6</a></td><td>Runs a Brainf*ck program.</td></tr>
+<tr><td><a href="#startup-2">startup/2</a></td><td/></tr>
+<tr><td><a href="#whisper-1">whisper/1</a></td><td><a href="#whisper-2">See <code>whisper/2</code>.</a></td></tr>
+<tr><td><a href="#whisper-2">whisper/2</a></td><td>Displays extra information.</td></tr>
+<tr><td><a href="#wrap-3">wrap/3</a></td><td>Implements a generic modulus function.</td></tr>
+</table>
+
+<h2><a name="exported">Exported Functions</a></h2>
+
+<h3><a name="assert-2">assert/2</a></h3>
+
+<p><code>assert(Condition::<a href="#type-boolean">boolean()</a>, ErrorReason::term()) -> true</code></p>
+<p>Asserts that the condition is true.  If it is not, the
+  process crashes with the given reason.</p>
+
+<h3><a name="assert_in_bounds-4">assert_in_bounds/4</a></h3>
+
+<p><code>assert_in_bounds(Arg1, Arg2, Arg3, Arg4) -> term()</code></p>
+<p> </p>
+
+<h3><a name="os_eol-0">os_eol/0</a></h3>
+
+<p><code>os_eol() -> string()</code></p>
+<p>Returns the native end-of-line convention, if it can be determined.
+  If it cannot be determined, linefeed (ASCII character 10) is assumed.</p>
+
+<h3><a name="run-1">run/1</a></h3>
+
+<p><code>run(Args::[string()]) -> <a href="#type-halt">halt()</a></code></p>
+<p>Starts <code>pibfi</code> for the purposes of running a Brainf*ck
+  program.  This function is intended to be invoked
+  from the command line.  When using <code>pibfi</code> from another Erlang
+  program, or from the Erlang shell, it is suggested you call
+  <code>run/6</code> instead.</p>
+
+<h3><a name="run-6">run/6</a></h3>
+
+<p><code>run(Supervisor::pid(), ProgramSource::binary(), ParserOptions::[{atom(), term()}], TapeOptions::[{atom(), term()}], IOOptions::[{atom(), term()}], DebugOptions::[{atom(), term()}]) -> <a href="#type-tape">tape()</a><ul><li><a name="type-program">program()</a> = string() | binary() | <a href="#type-tuple">tuple()</a></li></ul></code></p>
+<p>Runs a Brainf*ck program.</p>
+
+<h3><a name="startup-2">startup/2</a></h3>
+
+<p><code>startup(Arg1, Arg2) -> term()</code></p>
+<p> </p>
+
+<h3><a name="whisper-1">whisper/1</a></h3>
+
+<p><code>whisper(string()) -> ok</code></p>
+<p>Equivalent to <a href="#whisper-2"><code>whisper(string(), [])</code></a>.</p>
+
+<h3><a name="whisper-2">whisper/2</a></h3>
+
+<p><code>whisper(string(), [term()]) -> ok</code></p>
+<p>Displays extra information.  The user can shut this off with
+  <code>-quiet</code>.</p>
+
+<h3><a name="wrap-3">wrap/3</a></h3>
+
+<p><code>wrap(Value::integer(), Max::integer(), Min::integer()) -> integer()</code></p>
+<p>Implements a generic modulus function.  Both the top and bottom
+  modulus limits may be specified.</p></body>
+</html>

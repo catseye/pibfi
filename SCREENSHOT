@@ -1,0 +1,351 @@
+# erl -noshell -maxcell 65535 -wrapcell -xlatout #10#13=#nl -autopsy -statusevery 5m -run pibfi run http://www.people.fas.harvard.edu/~jafowler/pi/pi.b
+pibfi: Platonic Ideal Brainf*ck Interpreter v2003.0505
+Copyright (c)2003 Cat's Eye Technologies. All rights reserved.
+Program file name: http://www.people.fas.harvard.edu/~jafowler/pi/pi.b
+Parser options: heredoc=undefined statuscmd="#" optimize=1 dontstrip=[] 
+Tape options: wraptape=false mintape=0 maxtape=infinity wrapcell=true mincell=0 maxcell=65535 tapemodule=pibfi_tape_ets 
+I/O options: xlatin=["\n"="\n" ] xlatout=["\n\r"="\n" ] eof=0 wrapin=false minin=0 maxin=infinity wrapout=false minout=0 maxout=infinity outfile=tty infile=tty 
+Debug options: statusevery=300000 
+--------------BEGIN PROGRAM OUTPUT--------------
+0
+===== STATUS REPORT ===== Mon May 5 2003, 20:38:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 5 min 0 sec at mean kips 239
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:     5935215x(+)     5998202x(-)    22500864x(<)    22500870x(>)
+= Exec tally:           0x(,)           3x(.)     7400131x([)     7400125x(])
++ Tape head position: 7 cells right of start, cell contents: 105
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     312      20      22       1       1     105     376      43       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 20:43:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 10 min 0 sec at mean kips 209
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:    11857128x(+)    11920407x(-)    35868198x(<)    35868204x(>)
+= Exec tally:           0x(,)           3x(.)    14814889x([)    14814883x(])
++ Tape head position: 7 cells right of start, cell contents: 44
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     209      11      11       7       1      44     380      23       0       0
+3
+===== STATUS REPORT ===== Mon May 5 2003, 20:48:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 15 min 0 sec at mean kips 216
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:    17798122x(+)    17926744x(-)    57121132x(<)    57121138x(>)
+= Exec tally:           0x(,)           6x(.)    22218742x([)    22218736x(])
++ Tape head position: 7 cells right of start, cell contents: 142
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     161       9      47       3       1     142     378      57       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 20:53:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 20 min 0 sec at mean kips 206
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:    23789785x(+)    23917104x(-)    69978858x(<)    69978860x(>)
+= Exec tally:           0x(,)           6x(.)    29710400x([)    29710395x(])
++ Tape head position: 2 cells right of start, cell contents: 284
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0       7     284      38      12      10       0
+===== STATUS REPORT ===== Mon May 5 2003, 20:58:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 25 min 0 sec at mean kips 200
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:    29783983x(+)    29912320x(-)    83278124x(<)    83278130x(>)
+= Exec tally:           0x(,)           6x(.)    37211818x([)    37211812x(])
++ Tape head position: 7 cells right of start, cell contents: 285
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     312       8      26       1       1     285     372      35       0       0
+1
+===== STATUS REPORT ===== Mon May 5 2003, 21:03:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 30 min 0 sec at mean kips 206
+= Currently at line 188, col 5, instruction '[', whilelevel 5
+= Exec tally:    35753100x(+)    35945090x(-)   104704284x(<)   104704285x(>)
+= Exec tally:           0x(,)           9x(.)    44650879x([)    44650874x(])
++ Tape head position: 1 cell right of start, cell contents: 394
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 5 cells right of start):
+      #0    ->#1      #2      #3      #4      #5
+       0     394     119      45      17       5
+===== STATUS REPORT ===== Mon May 5 2003, 21:08:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 35 min 0 sec at mean kips 202
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:    41735643x(+)    41928368x(-)   117617082x(<)   117617084x(>)
+= Exec tally:           0x(,)           9x(.)    52135967x([)    52135962x(])
++ Tape head position: 2 cells right of start, cell contents: 184
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0     164     184       4      50       7       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:13:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 40 min 0 sec at mean kips 198
+= Currently at line 188, col 5, instruction '[', whilelevel 5
+= Exec tally:    47717935x(+)    47910091x(-)   130253752x(<)   130253753x(>)
+= Exec tally:           0x(,)           9x(.)    59617264x([)    59617259x(])
++ Tape head position: 1 cell right of start, cell contents: 147
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 5 cells right of start):
+      #0    ->#1      #2      #3      #4      #5
+       0     147     281      50       0       9
+===== STATUS REPORT ===== Mon May 5 2003, 21:18:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 45 min 0 sec at mean kips 195
+= Currently at line 188, col 22, instruction '[', whilelevel 6
+= Exec tally:    53385479x(+)    53579121x(-)   142636196x(<)   142636202x(>)
+= Exec tally:           0x(,)           9x(.)    66710778x([)    66710772x(])
++ Tape head position: 7 cells right of start, cell contents: 36
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     343      17      23       5       1      36     533      41       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:23:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 50 min 0 sec at mean kips 196
+= Currently at line 254, col 56, instruction '[', whilelevel 2
+= Exec tally:    58965526x(+)    59108105x(-)   160883365x(<)   160883399x(>)
+= Exec tally:           0x(,)           9x(.)    73574442x([)    73574440x(])
++ Tape head position: 34 cells right of start, cell contents: 12244
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (29 - 38 cells right of start):
+     #29     #30     #31     #32     #33   ->#34     #35     #36     #37     #38
+       0       1      15       0       4   12244       9       0       0      10
+4
+===== STATUS REPORT ===== Mon May 5 2003, 21:28:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 55 min 0 sec at mean kips 194
+= Currently at line 188, col 22, instruction '[', whilelevel 6
+= Exec tally:    64479186x(+)    64736496x(-)   175404374x(<)   175404380x(>)
+= Exec tally:           0x(,)          12x(.)    80560848x([)    80560842x(])
++ Tape head position: 7 cells right of start, cell contents: 729
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     784      20      36       0       1     729     798      57       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:33:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 0 min 0 sec at mean kips 192
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:    70045030x(+)    70304600x(-)   187755052x(<)   187755054x(>)
+= Exec tally:           0x(,)          12x(.)    87531501x([)    87531496x(])
++ Tape head position: 2 cells right of start, cell contents: 152
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0      73     152      35       5       6       0
+1
+===== STATUS REPORT ===== Mon May 5 2003, 21:38:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 5 min 0 sec at mean kips 194
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:    75614209x(+)    75938125x(-)   208594883x(<)   208594889x(>)
+= Exec tally:           0x(,)          15x(.)    94472347x([)    94472341x(])
++ Tape head position: 7 cells right of start, cell contents: 393
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     574      37      27       0       1     393     600      65       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:43:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 10 min 0 sec at mean kips 192
+= Currently at line 188, col 22, instruction '[', whilelevel 6
+= Exec tally:    81182483x(+)    81507283x(-)   220985489x(<)   220985495x(>)
+= Exec tally:           0x(,)          15x(.)   101443761x([)   101443755x(])
++ Tape head position: 7 cells right of start, cell contents: 262
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     292      40       8       4       1     262     490      49       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:48:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 15 min 0 sec at mean kips 191
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:    86759563x(+)    87084772x(-)   233715939x(<)   233715941x(>)
+= Exec tally:           0x(,)          15x(.)   108426863x([)   108426858x(])
++ Tape head position: 2 cells right of start, cell contents: 45
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0     313      45      21       3       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:53:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 20 min 0 sec at mean kips 191
+= Currently at line 161, col 60, instruction '[', whilelevel 5
+= Exec tally:    92300725x(+)    92691104x(-)   250848885x(<)   250848887x(>)
+= Exec tally:           0x(,)          15x(.)   115383433x([)   115383428x(])
++ Tape head position: 2 cells right of start, cell contents: 107
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0     242     107      39       1       1       0
+===== STATUS REPORT ===== Mon May 5 2003, 21:58:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 25 min 0 sec at mean kips 190
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:    97850728x(+)    98241773x(-)   263441519x(<)   263441525x(>)
+= Exec tally:           0x(,)          15x(.)   122333144x([)   122333138x(])
++ Tape head position: 7 cells right of start, cell contents: 168
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     258       5      13       0       1     168     270      19       0       0
+5
+9
+===== STATUS REPORT ===== Mon May 5 2003, 22:03:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 30 min 0 sec at mean kips 191
+= Currently at line 188, col 5, instruction '[', whilelevel 5
+= Exec tally:   103421719x(+)   103875819x(-)   283773809x(<)   283773810x(>)
+= Exec tally:           0x(,)          21x(.)   129269917x([)   129269912x(])
++ Tape head position: 1 cell right of start, cell contents: 250
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 5 cells right of start):
+      #0    ->#1      #2      #3      #4      #5
+       0     250     287      37      19       5
+===== STATUS REPORT ===== Mon May 5 2003, 22:08:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 35 min 0 sec at mean kips 190
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:   108954813x(+)   109408269x(-)   295520049x(<)   295520051x(>)
+= Exec tally:           0x(,)          21x(.)   136188384x([)   136188379x(])
++ Tape head position: 2 cells right of start, cell contents: 75
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0     739      75      46       6       2       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:13:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 40 min 0 sec at mean kips 188
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:   114427622x(+)   114882129x(-)   307226669x(<)   307226671x(>)
+= Exec tally:           0x(,)          21x(.)   143035985x([)   143035980x(])
++ Tape head position: 2 cells right of start, cell contents: 107
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0     515     107      37       9       2       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:18:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 45 min 0 sec at mean kips 187
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:   119902051x(+)   120358356x(-)   319041702x(<)   319041704x(>)
+= Exec tally:           0x(,)          21x(.)   149888053x([)   149888048x(])
++ Tape head position: 2 cells right of start, cell contents: 148
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0     140     148      33       5       2       0
+2
+===== STATUS REPORT ===== Mon May 5 2003, 22:23:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 50 min 0 sec at mean kips 188
+= Currently at line 188, col 5, instruction '[', whilelevel 5
+= Exec tally:   125363050x(+)   125884129x(-)   339700934x(<)   339700935x(>)
+= Exec tally:           0x(,)          24x(.)   156694446x([)   156694441x(])
++ Tape head position: 1 cell right of start, cell contents: 201
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 5 cells right of start):
+      #0    ->#1      #2      #3      #4      #5
+       0     201     212      34      28       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:28:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 1 hr 55 min 0 sec at mean kips 187
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:   130833914x(+)   131354874x(-)   351906329x(<)   351906331x(>)
+= Exec tally:           0x(,)          24x(.)   163539106x([)   163539101x(])
++ Tape head position: 2 cells right of start, cell contents: 464
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0      23     464      47       1       2       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:33:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 0 min 0 sec at mean kips 186
+= Currently at line 161, col 60, instruction '[', whilelevel 5
+= Exec tally:   136287189x(+)   136809423x(-)   363865221x(<)   363865223x(>)
+= Exec tally:           0x(,)          24x(.)   170365237x([)   170365232x(])
++ Tape head position: 2 cells right of start, cell contents: 103
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0      68     103      12      24       2       0
+6
+===== STATUS REPORT ===== Mon May 5 2003, 22:38:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 5 min 0 sec at mean kips 188
+= Currently at line 188, col 22, instruction '[', whilelevel 6
+= Exec tally:   141689012x(+)   142276109x(-)   384240054x(<)   384240060x(>)
+= Exec tally:           0x(,)          27x(.)   177098770x([)   177098764x(])
++ Tape head position: 7 cells right of start, cell contents: 24
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+      82      35      29       6       1      24     455      65       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:43:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 10 min 0 sec at mean kips 186
+= Currently at line 188, col 22, instruction '[', whilelevel 6
+= Exec tally:   147099275x(+)   147685307x(-)   395703128x(<)   395703134x(>)
+= Exec tally:           0x(,)          27x(.)   183863387x([)   183863381x(])
++ Tape head position: 7 cells right of start, cell contents: 100
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     244      49      11       9       1     100     793      61       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:48:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 15 min 0 sec at mean kips 185
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:   152537435x(+)   153123412x(-)   407336323x(<)   407336329x(>)
+= Exec tally:           0x(,)          27x(.)   190665199x([)   190665193x(])
++ Tape head position: 7 cells right of start, cell contents: 73
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     427      32      22       6       1      73     778      55       0       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:53:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 20 min 0 sec at mean kips 184
+= Currently at line 187, col 67, instruction '[', whilelevel 5
+= Exec tally:   157954886x(+)   158541517x(-)   418975842x(<)   418975844x(>)
+= Exec tally:           0x(,)          27x(.)   197444652x([)   197444647x(])
++ Tape head position: 2 cells right of start, cell contents: 51
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (0 - 6 cells right of start):
+      #0      #1    ->#2      #3      #4      #5      #6
+       0      67      51      43       5      12       0
+===== STATUS REPORT ===== Mon May 5 2003, 22:58:42 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 25 min 0 sec at mean kips 184
+= Currently at line 162, col 15, instruction '[', whilelevel 6
+= Exec tally:   163368553x(+)   163956054x(-)   430676607x(<)   430676613x(>)
+= Exec tally:           0x(,)          27x(.)   204216493x([)   204216487x(])
++ Tape head position: 7 cells right of start, cell contents: 14
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (2 - 11 cells right of start):
+      #2      #3      #4      #5      #6    ->#7      #8      #9     #10     #11
+     342       7      33       0       1      14     374      41       0       0
+5
+3
+---------------END PROGRAM OUTPUT---------------
+===== STATUS REPORT ===== Mon May 5 2003, 23:03:00 =====
+= Run began Mon May 5 2003, 20:33:42 duration 2 hr 29 min 18 sec at mean kips 185
+= Stopped at line 301, col 74, instruction '.', whilelevel 0
+= Exec tally:   168003129x(+)   168657743x(-)   449388177x(<)   449388190x(>)
+= Exec tally:           0x(,)          33x(.)   209994449x([)   209994449x(])
++ Tape head position: 13 cells right of start, cell contents: 13
++ Tape observed head position: min 0, max 145, range 146
++ Tape observed cell contents: min 0, max 65535, range 65536
++ Tape contents (8 - 17 cells right of start):
+      #8      #9     #10     #11     #12   ->#13     #14     #15     #16     #17
+      30      10       0       0      10      13       0       0       0      51

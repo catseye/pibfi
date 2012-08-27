@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Module pibfi_filter</title>
+
+</head>
+<body bgcolor="white">
+<h1>Module pibfi_filter</h1>
+<ul><li>
+<a href="#index">Function index</a></li><li>
+<a href="#exported">Exported functions</a></li></ul>
+
+<h2>Description</h2>
+Stream filtering for the Platonic Ideal Brainf*ck Interpreter.
+ 
+
+<h2><a name="index">Function Index</a></h2>
+
+<table width="100%" border="1"><tr><th colspan="2" align="left">Exported Functions</th></tr>
+<tr><td><a href="#notify-2">notify/2</a></td><td>Notifies the other end of the connection.</td></tr>
+<tr><td><a href="#send-2">send/2</a></td><td>Sends a character or characters to a filter server for filtration.</td></tr>
+<tr><td><a href="#server-5">server/5</a></td><td/></tr>
+<tr><td><a href="#start-6">start/6</a></td><td>Creates and spawns a new stream filter.</td></tr>
+</table>
+
+<h2><a name="exported">Exported Functions</a></h2>
+
+<h3><a name="notify-2">notify/2</a></h3>
+
+<p><code>notify(<a href="#type-xlat">xlat()</a>, term()) -> ok</code></p>
+<p>Notifies the other end of the connection.
+  They will receive a <code>{Filter::pid(), Notifier::pid(), message, term()}</code> message.</p>
+
+<h3><a name="send-2">send/2</a></h3>
+
+<p><code>send(<a href="#type-xlat">xlat()</a>, char() | string()) -> ok</code></p>
+<p>Sends a character or characters to a filter server for filtration.</p>
+
+<h3><a name="server-5">server/5</a></h3>
+
+<p><code>server(Arg1, Arg2, Arg3, Arg4, Arg5) -> term()</code></p>
+<p> </p>
+
+<h3><a name="start-6">start/6</a></h3>
+
+<p><code>start(Supervisor::pid(), Role::atom(), Dest::pid(), MaxThru::integer(), MinThru::integer(), WrapThru::integer()) -> pid()</code></p>
+<p>Creates and spawns a new stream filter.</p></body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Module pibfi_io</title>
+
+</head>
+<body bgcolor="white">
+<h1>Module pibfi_io</h1>
+<ul><li>
+<a href="#index">Function index</a></li><li>
+<a href="#exported">Exported functions</a></li><li>
+<a href="#internal">Documented Internal Functions</a></li></ul>
+
+<h2>Description</h2>
+I/O subsystem of the Platonic Ideal Brainf*ck Interpreter.
+ 
+  <p>Deals with the input and output servers, their filters, and
+  their translators.</p>
+ 
+
+<h2><a name="index">Function Index</a></h2>
+
+<table width="100%" border="1"><tr><th colspan="2" align="left">Exported Functions</th></tr>
+<tr><td><a href="#flush-1">flush/1</a></td><td>Flushes any pending output, even if it has not been translated yet.</td></tr>
+<tr><td><a href="#input-1">input/1</a></td><td>Retrieves the next character value from the input stream.</td></tr>
+<tr><td><a href="#output-2">output/2</a></td><td>Sends the given character value to the output stream.</td></tr>
+<tr><td><a href="#server-1">server/1</a></td><td>Spawned by <code>start/1</code>.</td></tr>
+<tr><td><a href="#start-3">start/3</a></td><td>Creates and spawns a new I/O subsystem.</td></tr>
+<tr><td><a href="#stop-1">stop/1</a></td><td>Tells the I/O server to stop.</td></tr>
+<tr><th colspan="2" align="left">Internal Documented Functions</th></tr>
+<tr><td><a href="#config-2">config/2</a></td><td>Sets the various options of an I/O subsystem.</td></tr>
+<tr><td><a href="#write-5">write/5</a></td><td>Writes a character to the output, within the given constraints.</td></tr>
+</table>
+
+<h2><a name="exported">Exported Functions</a></h2>
+
+<h3><a name="flush-1">flush/1</a></h3>
+
+<p><code>flush(pid()) -> ok</code></p>
+<p>Flushes any pending output, even if it has not been translated yet.</p>
+
+<h3><a name="input-1">input/1</a></h3>
+
+<p><code>input(pid()) -> integer() | nop</code></p>
+<p>Retrieves the next character value from the input stream.</p>
+
+<h3><a name="output-2">output/2</a></h3>
+
+<p><code>output(pid(), integer()) -> ok</code></p>
+<p>Sends the given character value to the output stream.</p>
+
+<h3><a name="server-1">server/1</a></h3>
+
+<p><code>server(IO) -> <a href="#type-never_returns">never_returns()</a></code></p>
+<p>Spawned by <code>start/1</code>.
+  Should not be called directly by user code.</p>
+
+<h3><a name="start-3">start/3</a></h3>
+
+<p><code>start(Supervisor::pid(), [<a href="#type-option">option()</a>], CannedInput::string()) -> pid()</code></p>
+<p>Creates and spawns a new I/O subsystem.
+  For a description of the allowed options, see the documentation for
+  the <code><a href="pibfi_options.html">pibfi_options</a></code> module.</p>
+
+<h3><a name="stop-1">stop/1</a></h3>
+
+<p><code>stop(pid()) -> ok</code></p>
+<p>Tells the I/O server to stop.</p>
+
+<h2><a name="internal">Documented Internal Functions</a></h2>
+
+<h3><a name="config-2">config/2</a></h3>
+
+<p><code>config([<a href="#type-option">option()</a>], <a href="#type-tape">tape()</a>) -> <a href="#type-tape">tape()</a></code></p>
+<p>Sets the various options of an I/O subsystem.</p>
+
+<h3><a name="write-5">write/5</a></h3>
+
+<p><code>write(<a href="#type-iodevice">iodevice()</a>, Max::integer(), Min::integer(), Wrap::<a href="#type-boolean">boolean()</a>, char()) -> ok</code></p>
+<p>Writes a character to the output, within the given constraints.</p></body>
+</html>

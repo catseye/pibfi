@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Module pibfi_interpreter</title>
+
+</head>
+<body bgcolor="white">
+<h1>Module pibfi_interpreter</h1>
+<ul><li>
+<a href="#index">Function index</a></li><li>
+<a href="#exported">Exported functions</a></li><li>
+<a href="#internal">Documented Internal Functions</a></li></ul>
+
+<h2>Description</h2>
+Interpreter for <code>pibfi</code>.
+ 
+
+<h2><a name="index">Function Index</a></h2>
+
+<table width="100%" border="1"><tr><th colspan="2" align="left">Exported Functions</th></tr>
+<tr><td><a href="#interpret-4">interpret/4</a></td><td>Interprets a Brainf*ck program.</td></tr>
+<tr><th colspan="2" align="left">Internal Documented Functions</th></tr>
+<tr><td><a href="#execute-4">execute/4</a></td><td>Executes a single Brainf*ck instruction.</td></tr>
+</table>
+
+<h2><a name="exported">Exported Functions</a></h2>
+
+<h3><a name="interpret-4">interpret/4</a></h3>
+
+<p><code>interpret(<a href="#type-program">program()</a>, ParserOptions::[{atom(), term()}], Tape::pid(), IoPid::pid()) -> ok</code></p>
+<p>Interprets a Brainf*ck program.  If the program is given in
+  an unparsed (list or binary) form, it will be parsed into a
+  tuple form before proceeding.</p>
+
+<h2><a name="internal">Documented Internal Functions</a></h2>
+
+<h3><a name="execute-4">execute/4</a></h3>
+
+<p><code>execute(<a href="#type-instruction">instruction()</a>, Tape::pid(), IO::pid(), StatusCmd) -> ok</code></p>
+<p>Executes a single Brainf*ck instruction.</p></body>
+</html>
